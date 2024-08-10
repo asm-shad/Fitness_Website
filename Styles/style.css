@@ -66,12 +66,26 @@ p{
     padding: 0.8rem 3rem;
     font-size: 1rem;
     font-weight: 600;
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     outline: none;
     cursor: pointer;
     transition: all .3s ease;
     border-radius: 30px;
     color: white;
+}
+.hamburger {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 11;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: none;
+}
+.hamburger img {
+    width: 30px;
 }
 
 /* Banner AND NavBar Styles */
@@ -116,9 +130,6 @@ header.Nav-banner {
     flex-direction: column;
     justify-content: center;
 }
-/* .banner-text{
-    margin: 20px 0;
-} */
 .banner-text h1{
     font-size: 4rem;
     margin-bottom: 1rem;
@@ -140,11 +151,11 @@ header.Nav-banner {
 }
 .btn-primary:hover{
     background-color: var(---bg-primary);
-    border: 2px solid var(--danger);
+    border: 1px solid var(--danger);
     color: var(--danger);
 }
 .btn-secondary{
-    border: 2px solid var(--pure);
+    border: 1px solid var(--pure);
     background-color: var(--bg-primary);
     margin-left: 1rem;
 }
@@ -463,4 +474,120 @@ footer{
 }
 .footer-container > p{
     text-align: center;
+}
+@media screen and (max-width:576px){
+    p{
+        word-spacing: 0.5px;
+        letter-spacing: 0.5px;
+        line-height: normal;
+        font-size: 0.8rem;
+    }
+    .hamburger{
+        display: inline;
+        top: 85px;
+    }
+    #nav-items{
+        display: none;
+    }
+    .navBar{
+        padding: 1rem;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .banner-container{
+        flex-direction: row;
+        justify-content: left;
+        padding: 1rem;
+        height: 900px;
+    }
+    .banner-text h1{
+        font-size: 2rem;
+    }
+    .banner-text p{
+        width: 80%;
+        font-size: 0.9rem;
+    }
+    .banner-img{
+        position: absolute;
+        top: 380px;
+        right: -5px;
+    }
+    .button-area{
+        display: flex;
+        gap: 0.5rem;
+    }
+    .button-area button{
+        font-size: 0.8rem;
+    }
+    .btn{
+        padding: 0.8rem 1.8rem;
+    }
+    .btn-secondary{
+        margin-left: 0;
+    }
+    .btn-primary{
+        padding: 0.8rem 1.5rem;
+    }
+    .banner-text{
+        margin: 0;
+        padding: 0;
+    }
+    .floating-div-1{
+        width: 150px;
+        height: 70px;
+        top: 750px;
+        right: 200px;
+        border-radius: 0.5rem;
+    }
+    .floating-div-1 h3{
+        margin-top: 2rem;
+        font-size: 1rem;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .floating-div-1 p{
+        font-size: 0.7rem;
+    }
+    .floating-div-1 .circle{
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+    }
+    .floating-div-2{
+        width: 140px;
+        height: 70px;
+        top: 420px;
+        left: 220px;
+        opacity: 0.7;
+    }
+    .floating-div-2 h3{
+        margin: 0;
+        font-size: 1.5rem;
+    }
+    .floating-div-2 p{
+        margin: 0;
+        font-size: 0.5rem;
+    }
+    .text-area{
+        margin: auto;
+        text-align: center;
+        width: 90%;
+    }
+    .text-area h2{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        font-weight: 800;
+    }
+    .text-area p{
+        font-size: 0.8rem;
+    }
+    .habit{
+        padding: 0;
+    }
+    .card-area{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 0px;
+    }
+    
 }
