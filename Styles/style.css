@@ -300,7 +300,6 @@ header.Nav-banner {
     height: 100%;
     background-image: url('../images/run.jpg');
     background-repeat: no-repeat;
-    background-position: right;
     background-size: cover;
     background-position: calc(70%) calc(30%);
     background-size: 300%;
@@ -589,5 +588,36 @@ footer{
         grid-template-columns: auto;
         grid-gap: 0px;
     }
-    
+    .run-container{
+        flex-direction: column;
+        margin: 0rem 1rem;
+        padding: 1.2rem;
+        height: 450px;
+    }
+    .run-text-area{
+        margin-left: 0rem;
+    }
+    .run-text-area h1{
+        font-size: 2rem;
+        font-weight: 900;
+        color: var(--pure);
+        margin-bottom: 0.8rem;
+        line-height: 2.5rem;
+    }
+    .run-text-area p{
+        margin-bottom: 1rem;
+    }
+    .run-text-area .btn{
+        width: 100%;
+    }
+    .run-img-area{
+        margin-top: 20px;
+        justify-content: center;
+    }
+    .run-img-area .image{
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: 100%; 
+    }
 }
