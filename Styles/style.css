@@ -373,6 +373,8 @@ input, select{
     font-size: 0.9rem;
     border-radius: 0.5rem;
     outline: none;
+    width: 100%;
+    box-sizing: border-box;
 }
 select{
     color: var(--secondary);
@@ -619,5 +621,66 @@ footer{
         height: 100%;
         background-repeat: no-repeat;
         background-size: 100%; 
+    }
+    .BMI-text-area{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .BMI-text-area h1{
+        font-size: 2rem;
+    }
+    /* .BMI-form{
+        width: 90%;
+    } */
+    .BMI-calculator-area{
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .BMI-calculator-area .left h3, .BMI-calculator-area .right h3{
+        font-size: 1.25rem;
+    }
+    .BMI-calculator-area .left h3{
+        margin-bottom: 2rem;
+    }
+    .BMI-calculator-area .right h3{
+        margin-top: 3rem;
+    }
+    td, th{
+        padding: 0.7rem 1.6rem;
+    }
+    th{
+        font-size: 1.0rem;
+    }
+    td{
+        color: var(--secondary);
+        font-size: 1rem;
+    }
+    .BMI-calculator-area .right p{
+        width: 90%;
+    }
+    .input-wrap-1, .input-wrap-2{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0.5rem;
+    }
+    input, select{
+        padding: 0.5rem;
+        font-size: 0.8rem;
+        border-radius: 0.4rem;
+    }
+    .team-text-area{
+        width: 320px;
+    }
+    .team-text-area h1{
+        font-size: 2rem;
+    }
+    .team-img-area{
+        background-color: var(--ternary);
+        display: grid;
+        grid-template-columns: auto;
+        padding: 1.5rem;
+    }
+    .team-member{
+        padding: 1rem;
     }
 }
