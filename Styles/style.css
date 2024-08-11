@@ -683,4 +683,24 @@ footer{
     .team-member{
         padding: 1rem;
     }
+    .footer-text-area p{
+        font-size: 0.8rem;
+        width: 90%;
+    }
+    .footer-text-area .logo{
+        margin: 0px;
+    }
+    .footer-chunks{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 2rem; 
+    }
+    .footer-services h4{
+        font-size: 1.75rem;
+        margin-top: 2rem;
+    }
+    .footer-services h5{
+        font-size: 1.2rem;
+    }
 }
